@@ -1,9 +1,22 @@
+.home_container{
+    max-width: 1500px;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+}
 .home_banner_img{
     width: 100%;
     z-index: -1;
-    margin-bottom: -100px;
+    margin-bottom: -200px;
     mask-image: 
     linear-gradient(to bottom,
      rgba(0,0,0,1), 
     rgba(0,0,0,0));
+}
+
+.home_product_row{
+    display: flex;
+    margin: 5px 10px;
+    z-index: 1;
+    justify-content: space-between;
 }
