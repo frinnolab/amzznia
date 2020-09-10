@@ -1,3 +1,5 @@
+AMZZNIA, An Amazon-like Ecommerce App built with React Framework and Firebase as a Backend.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
