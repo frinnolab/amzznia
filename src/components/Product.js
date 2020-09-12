@@ -4,7 +4,7 @@ import '../design/Product.css';
 function Product({id, title, price,image, rating}) {
     return (
         <div className='product'>
-            <div className='product_info'>
+            <div className='product_info' id={id}>
                 <p className='product_title'>
                     {title}
                 </p>
@@ -18,7 +18,7 @@ function Product({id, title, price,image, rating}) {
                     {Array(rating)
                         .fill()
                         .map((_,i)=>(
-                            <p>🌟</p>
+                            <span role="img" aria-label = "">🌟</span>
                         ))}
                 </div>
 

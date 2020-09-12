@@ -3,12 +3,16 @@ import '../design/Header.css';
 import SearchIcon from '@material-ui/icons/Search';
 import ShoppingBasket from '@material-ui/icons/ShoppingBasket';
 import Logo from '../assets/AMZZNIA_LOGO.png';
+import {Link} from 'react-router-dom';
 
 function Header(){
     return(
       <div className = 'header'>
         {/**Logo */}
-        <img className='header_logo' src={Logo} alt="AMZZNIA Logo"/>
+        <Link to='/'>
+            <img className='header_logo' src={Logo} alt="AMZZNIA Logo"/>
+        </Link>
+        
 
         {/**Search input */}
 
@@ -51,13 +55,16 @@ function Header(){
 
             {/**Cart & Counter Nav */}
 
-            <div className='header_cart'>
-                <ShoppingBasket/>
+            <Link to='/checkout'>
+                <div className='header_cart'>
+                    <ShoppingBasket/>
 
-                <span className='header_nav_link_two header_basketCount'>
-                    0
-                </span>
-            </div>
+                    <span className='header_nav_link_two header_basketCount'>
+                        0
+                    </span>
+                </div>
+            </Link>
+          
         </div>
       </div>
     );

@@ -1,0 +1,25 @@
+.checkout_item{
+    display: flex;  
+    margin: 10px; 
+    z-index: 1;
+}
+
+.checkout_item_img{
+    max-width:fit-content ;
+    max-height: 150px;
+    object-fit:contain;
+    margin-right: 5px;
+}
+
+.checkout_item_info{
+    display: flex;
+    flex-direction: column;
+}
+
+.checkout_item_rating{
+    display: flex;
+}
+
+.checkout_item_remove{
+    margin:5px;
+}
